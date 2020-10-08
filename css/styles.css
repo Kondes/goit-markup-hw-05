@@ -105,6 +105,17 @@ img {
 }
 .current {
   color: var(--accent-color);
+  position: relative;
+}
+.current::after {
+  display: flex;
+  content: '';
+  width: 48px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
 }
 .size-navigation {
   padding-top: 32px;
