@@ -117,6 +117,21 @@ img {
   position: absolute;
   bottom: 0;
 }
+.current-portfolio {
+  color: var(--accent-color);
+  position: relative;
+}
+.current-portfolio::after {
+  display: flex;
+  content: '';
+  width: 78px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+}
+
 .size-navigation {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -570,7 +585,7 @@ img {
 .border:hover .second-overlay {
   transform: translateX(0);
 }
-.proba {
+.list-hide {
   position: relative;
   overflow: hidden;
 }
@@ -581,7 +596,7 @@ img {
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: all 500ms linear;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-overlay {
@@ -589,10 +604,10 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  line-height: 1.15;
-
-  color: #ffffff;
+  font-size: 18px;
+  width: 320px;
+  line-height: 28px;
+  color: var(--main-text-color);
 }
 
 .container .list {
